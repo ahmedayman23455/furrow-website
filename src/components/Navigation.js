@@ -20,43 +20,52 @@ import { Container, Flex } from '../styles/globalStyles';
 // framermotion
 import { motion, AnimatePresence } from 'framer-motion';
 
+// videoos
+import video from '../assets/video/video.mp4';
+import projects from '../assets/video/projects.mp4';
+import makeItZero from '../assets/video/make-it-zero.mp4';
+import itTakesAnIsland from '../assets/video/it-takes-an-island.mp4';
+import featuredVideo from '../assets/video/featured-video.mp4';
+import easy from '../assets/video/easy.mp4';
+import beaches50 from '../assets/video/50-beaches.mp4';
+
 const navRoutes = [
   {
     id: 0,
     title: 'not humble',
     path: '/not-humble',
-    video: 'featured-video.mp4',
+    video: featuredVideo,
   },
   {
     id: 1,
     title: 'bleeping easy',
     path: '/bleeping-easy',
-    video: 'easy.mp4',
+    video: easy,
   },
   {
     id: 2,
     title: 'make it zero',
     path: '/make-it-zero',
-    video: 'make-it-zero.mp4',
+    video: makeItZero,
   },
   {
     id: 3,
     title: 'it takes an island',
     path: '/it-takes-an-island',
-    video: 'it-takes-an-island.mp4',
+    video: itTakesAnIsland,
   },
   {
     id: 4,
     title: '50 beaches',
     path: '/50-beaches',
-    video: '50-beaches.mp4',
+    video: beaches50,
   },
 ];
 
 function Navigation({ toggleMenu, setToggleMenu, onCursor }) {
   const [revealVideo, setRevealVideo] = useState({
     show: false,
-    video: 'featured-video.mp4',
+    video: featuredVideo,
     key: '0',
   });
 
@@ -209,7 +218,8 @@ function Navigation({ toggleMenu, setToggleMenu, onCursor }) {
                 <AnimatePresence initial={false} exitBeforeEnter>
                   <motion.video
                     key={revealVideo.key}
-                    src={`./assets/video/${revealVideo.video}`}
+                    src={revealVideo.video}
+                    // src={}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}

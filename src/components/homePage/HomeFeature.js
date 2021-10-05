@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import React, { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+import React, { useEffect, useState } from 'react';
+
 import { Container, Flex } from '../../styles/globalStyles';
 
 import { useInView } from 'react-intersection-observer';
@@ -14,7 +14,7 @@ import {
 } from '../../styles/homeStyles';
 
 function HomeFeature({ onCursor }) {
-  const [hovered, setHovered] = useState();
+  const [hovered, setHovered] = useState(false);
   const animation = useAnimation();
   const [contentRef, inView] = useInView({
     triggerOnce: false,
@@ -52,11 +52,11 @@ function HomeFeature({ onCursor }) {
         <FeaturedContent
           onMouseEnter={() => {
             onCursor('hovered');
-            setHovered(!hovered);
+            setHovered((prevState) => !prevState);
           }}
           onMouseLeave={() => {
             onCursor();
-            setHovered(!hovered);
+            setHovered((prevState) => !prevState);
           }}
         >
           <Flex spaceBetween>

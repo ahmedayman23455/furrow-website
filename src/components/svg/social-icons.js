@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 export const Instagram = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 21">
@@ -8,7 +8,7 @@ export const Instagram = () => (
       <path d="M17 5a1 1 0 11-2 0 1 1 0 012 0"></path>
     </g>
   </svg>
-)
+);
 export const Facebook = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 24">
     <path
@@ -17,7 +17,7 @@ export const Facebook = () => (
       fillRule="nonzero"
     ></path>
   </svg>
-)
+);
 
 export const Vimeo = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 18">
@@ -27,7 +27,7 @@ export const Vimeo = () => (
       fillRule="evenodd"
     ></path>
   </svg>
-)
+);
 
 //Arrow Icon for ref
 {

@@ -14,6 +14,9 @@ import useWindowSize from '../../hooks/useWindowSize';
 // context
 import { useGlobalStateContext } from '../../context/globalContext';
 
+// video
+import featuredVideo from '../../assets/video/featured-video.mp4';
+
 function HomeBanner() {
   let canvas = useRef(null);
   const size = useWindowSize();
@@ -98,7 +101,7 @@ function HomeBanner() {
           height="100%"
           autoPlay
           loop
-          src="./assets/video/featured-video.mp4"
+          src={featuredVideo}
         ></video>
       </Video>
       <Canvas width={size.width} height={size.height} ref={canvas} />
