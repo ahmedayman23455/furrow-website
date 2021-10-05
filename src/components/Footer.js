@@ -20,21 +20,21 @@ function Footer({ onCursor }) {
             </FooterContent>
             <FooterSocial>
               <a
-                href=""
+                href="/"
                 onMouseEnter={() => onCursor('hovered')}
                 onMouseLeave={() => onCursor()}
               >
                 <Instagram />
               </a>
               <a
-                href=""
+                href="/"
                 onMouseEnter={() => onCursor('hovered')}
                 onMouseLeave={() => onCursor()}
               >
                 <Facebook />
               </a>
               <a
-                href=""
+                href="/"
                 onMouseEnter={() => onCursor('hovered')}
                 onMouseLeave={() => onCursor()}
               >

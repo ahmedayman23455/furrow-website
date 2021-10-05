@@ -17,9 +17,6 @@ import {
 // global styles
 import { Container, Flex } from '../styles/globalStyles';
 
-// react router
-import { Link } from 'react-router-dom';
-
 // framermotion
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -57,10 +54,6 @@ const navRoutes = [
 ];
 
 function Navigation({ toggleMenu, setToggleMenu, onCursor }) {
-  const getVideo = (videoName) => {
-    return `../assets/video/${videoName}.mp4`;
-  };
-
   const [revealVideo, setRevealVideo] = useState({
     show: false,
     video: 'featured-video.mp4',
@@ -177,21 +170,21 @@ function Navigation({ toggleMenu, setToggleMenu, onCursor }) {
                       </FooterContent>
                       <FooterSocial>
                         <a
-                          href=""
+                          href="/"
                           onMouseEnter={() => onCursor('pointer')}
                           onMouseLeave={() => onCursor()}
                         >
                           <Instagram />
                         </a>
                         <a
-                          href=""
+                          href="/"
                           onMouseEnter={() => onCursor('pointer')}
                           onMouseLeave={() => onCursor()}
                         >
                           <Facebook />
                         </a>
                         <a
-                          href=""
+                          href="/"
                           onMouseEnter={() => onCursor('pointer')}
                           onMouseLeave={() => onCursor()}
                         >

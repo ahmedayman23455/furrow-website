@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import HomeBanner from '../components/homePage/HomeBanner';
 import Layout from '../components/Layout';
 import { Switch, Route, Redirect } from 'react-router-dom';
@@ -13,7 +12,7 @@ import Footer from '../components/Footer';
 
 function App() {
   const dispath = useGlobalDispatchContext();
-  const { currentTheme, cursorStyles } = useGlobalStateContext();
+  const { cursorStyles } = useGlobalStateContext();
 
   const onCursor = (cursorType) => {
     cursorType = (cursorStyles.includes(cursorType) && cursorType) || false;

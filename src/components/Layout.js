@@ -14,7 +14,6 @@ import {
   useGlobalDispatchContext,
 } from '../context/globalContext';
 import Navigation from './Navigation';
-import { useEffect } from 'react/cjs/react.development';
 
 /* -------------------------------------------------------------------------- */
 const GlobalStyle = createGlobalStyle`
